@@ -285,10 +285,7 @@
 </div>
 
 <script src="js/main.js"></script>
-<script src="https://forminit.com/sdk/v1/forminit.js"></script>
 <script>
-const forminit = new Forminit();
-
 document.getElementById('check-sonstiges').addEventListener('change', function() {
     document.getElementById('sonstiges-input').style.display = this.checked ? 'block' : 'none';
     if (!this.checked) document.getElementById('sonstiges-input').value = '';
@@ -297,9 +294,13 @@ document.getElementById('check-sonstiges').addEventListener('change', function()
 document.getElementById('feedback-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const formData = new FormData(this);
-    const { data, error } = await forminit.submit('FEEDBACK_FORM_ID', formData);
-    if (error) {
-        document.getElementById('feedback-result').textContent = 'Fehler: ' + error.message;
+    formData.append('access_key', '8fa3512b-cb13-4662-89c3-44cef27e7692');
+    formData.append('subject', 'Neues Feedback');
+    formData.append('from_name', 'Always Automaten Website');
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData });
+    const json = await res.json();
+    if (!json.success) {
+        document.getElementById('feedback-result').textContent = 'Fehler: ' + json.message;
         document.getElementById('feedback-result').style.color = '#ef4444';
         return;
     }

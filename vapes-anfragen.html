@@ -286,16 +286,17 @@
 </div>
 
 <script src="js/main.js"></script>
-<script src="https://forminit.com/sdk/v1/forminit.js"></script>
 <script>
-const forminit = new Forminit();
-
 document.getElementById('vapes-anfrage-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const formData = new FormData(this);
-    const { data, error } = await forminit.submit('VAPES_FORM_ID', formData);
-    if (error) {
-        document.getElementById('vapes-result').textContent = 'Fehler: ' + error.message;
+    formData.append('access_key', '8fa3512b-cb13-4662-89c3-44cef27e7692');
+    formData.append('subject', 'Neue Großhandel-Anfrage');
+    formData.append('from_name', 'Always Automaten Website');
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData });
+    const json = await res.json();
+    if (!json.success) {
+        document.getElementById('vapes-result').textContent = 'Fehler: ' + json.message;
         document.getElementById('vapes-result').style.color = '#ef4444';
         return;
     }
