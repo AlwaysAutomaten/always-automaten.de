@@ -140,6 +140,7 @@
             <p>Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
             <form id="standort-anfrage-form">
                 <input type="hidden" name="fi-text-formular" value="Standort-Anfrage">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                 <div class="form-row">
                     <div class="form-group" style="flex:1">
                         <label class="form-label">Ihr Name</label>
@@ -173,7 +174,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">Beschreibung des Standorts</label>
-                    <textarea name="fi-text-beschreibung" class="form-textarea" rows="4" placeholder="Beschreiben Sie kurz den Standort: Ist er an einer Straße? Gibt es Strom? Gibt es Laufkundschaft?"></textarea>
+                    <textarea name="fi-text-beschreibung" class="form-textarea" rows="4" placeholder="Beschreiben Sie kurz den Standort: Ist er an einer Straße? Gibt es Strom? Gibt es Laufkundschaft?" required></textarea>
                 </div>
                 <div class="form-group">
                     <label class="form-checkbox">

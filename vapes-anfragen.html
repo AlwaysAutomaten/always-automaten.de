@@ -140,6 +140,7 @@
             <p>Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
             <form id="vapes-anfrage-form">
                 <input type="hidden" name="fi-text-formular" value="Großhandel-Anfrage">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                 <div class="form-row">
                     <div class="form-group" style="flex:1">
                         <label class="form-label">Ihr Name</label>
@@ -168,7 +169,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">Welche Produkte interessieren Sie?</label>
-                    <textarea name="fi-text-interesse" class="form-textarea" rows="3" placeholder="z.B. ELFA Pods, Basisgeräte, Kondome, Snacks, Feuerzeuge, Ladekabel..."></textarea>
+                    <textarea name="fi-text-interesse" class="form-textarea" rows="3" placeholder="z.B. ELFA Pods, Basisgeräte, Kondome, Snacks, Feuerzeuge, Ladekabel..." required></textarea>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Wann passt Ihnen ein Gespräch am besten?</label>
