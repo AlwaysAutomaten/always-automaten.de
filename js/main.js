@@ -361,8 +361,16 @@ if (navToggle && navMenu) {
 })();
 
 function loadAnalytics() {
-    // Google Analytics wird hier geladen wenn Consent gegeben wurde
-    // GA4 Measurement ID wird später eingetragen
+    if (document.getElementById('gtag-script')) return;
+    var s = document.createElement('script');
+    s.id = 'gtag-script';
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-681FWP0R3W';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-681FWP0R3W');
 }
 
 // ========== STAR RATING ==========
