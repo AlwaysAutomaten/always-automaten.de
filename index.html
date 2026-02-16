@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Always Automaten – Dein 24/7 Automat in Zeven. Vapes, Ladekabel, Kondome, Feuerzeuge, Snacks und mehr. Nur Kartenzahlung. Immer da. Immer für dich.">
+    <meta name="keywords" content="Vape Automat Zeven, ELFA Pods Zeven, E-Zigaretten Automat, Always Automaten, ELFA Basisgerät, Vape kaufen Zeven, Automat Bahnhofstraße Zeven, Vending Machine Zeven, Landkreis Rotenburg Wümme, Niedersachsen">
+    <meta name="theme-color" content="#0c1929">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Always Automaten | Dein 24/7 Automat in Zeven">
+    <meta property="og:description" content="Dein 24/7 Automat in Zeven. Vapes, Ladekabel, Kondome, Feuerzeuge, Snacks und mehr. Nur Kartenzahlung.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://always-automaten.de">
+    <meta property="og:image" content="https://always-automaten.de/images/logo.png">
+    <title>Always Automaten | Dein 24/7 Automat in Zeven – Immer da. Immer für dich.</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="canonical" href="https://always-automaten.de">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Always Automaten",
+        "description": "24/7 Automat in Zeven – Vapes, Ladekabel, Kondome, Feuerzeuge, Snacks und mehr. Nur Kartenzahlung.",
+        "url": "https://always-automaten.de",
+        "telephone": "+4915753708864",
+        "email": "info@always-automaten.de",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Feldstraße 22",
+            "addressLocality": "Zeven",
+            "postalCode": "27404",
+            "addressCountry": "DE"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "paymentAccepted": "Visa, V PAY, Mastercard, Maestro, Girocard",
+        "currenciesAccepted": "EUR"
+    }
+    </script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <img src="images/logo.png" alt="Always Automaten">
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+</div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursor-glow"></div>
+
+<!-- Page Transition Overlay -->
+<div class="page-transition" id="page-transition"></div>
+
+<!-- Age Verification Modal -->
+<div class="age-modal" id="age-modal">
+    <div class="age-modal-content">
+        <img src="images/logo.png" alt="Always Automaten Logo">
+        <div class="age-badge">18+</div>
+        <h2>Altersverifikation</h2>
+        <p>Diese Website enthält Informationen zu Tabak- und Nikotinprodukten. Der Zugang ist nur für Personen ab 18 Jahren gestattet.</p>
+        <div class="age-buttons">
+            <button class="btn btn-primary btn-lg" id="age-confirm">Ich bin 18+</button>
+            <button class="btn btn-secondary btn-lg" id="age-deny">Unter 18</button>
+        </div>
+        <div class="age-deny-msg" id="age-deny-msg">
+            Du musst mindestens 18 Jahre alt sein, um diese Website zu besuchen.
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="Always Automaten">
+            <span>Always Automaten</span>
+        </a>
+        <button class="nav-toggle" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="nav-menu">
+    <div class="nav-menu-content">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Start</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="standorte.html">Standorte</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="standort-anfrage.html">Standort anfragen</a></li>
+            <li><a href="aktuelles.html">Aktuelles</a></li>
+            <li><a href="vapes-anfragen.html">Großhandel</a></li>
+        </ul>
+        <div class="nav-cta-menu">
+            <a href="standorte.html" class="btn btn-primary btn-lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Standort finden
+            </a>
+            <a href="tel:+4915753708864" class="btn btn-secondary btn-lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                0157 5370 8864
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero splatter-bg">
+    <canvas id="hero-particles" class="hero-particles"></canvas>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Dein Automat in Zeven – 24/7
+                </div>
+                <h1>Immer da. <span class="gradient-text typing-target">Immer für dich.</span></h1>
+                <p class="lead">Always Automaten – dein 24/7 Automat in Zeven. Vapes, Ladekabel, Kondome, Feuerzeuge, Snacks und mehr. Einfach Karte rein, Produkt raus.</p>
+                <div class="hero-buttons">
+                    <a href="standorte.html" class="btn btn-primary btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Standort finden
+                    </a>
+                    <a href="#produkte" class="btn btn-secondary btn-lg">Unsere Produkte</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">24/7</div>
+                        <div class="hero-stat-label">Immer verfügbar</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">Kartenzahlung</div>
+                        <div class="hero-stat-label">Visa, Mastercard, Girocard & mehr</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">18+</div>
+                        <div class="hero-stat-label">Altersverifikation</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-logo-showcase">
+                    <img src="images/logo.png" alt="Always Automaten Logo">
+                </div>
+                <div class="hero-card top">
+                    <div class="hero-card-icon orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="hero-card-text">
+                        <strong>24/7 geöffnet</strong>
+                        <span>Tag und Nacht für dich da</span>
+                    </div>
+                </div>
+                <div class="hero-card bottom">
+                    <div class="hero-card-icon teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </div>
+                    <div class="hero-card-text">
+                        <strong>Nur Kartenzahlung</strong>
+                        <span>Visa, Mastercard, Girocard & mehr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products" id="produkte">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                Unser Sortiment
+            </span>
+            <h2>Unsere Produkte in Zeven</h2>
+            <p>Alles was du brauchst – rund um die Uhr. Direkt aus dem Automaten an der Bahnhofstraße in Zeven.</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <span class="product-badge">Verschiedene Sorten</span>
+                <span class="product-emoji">💨</span>
+                <h3>ELFA Pods</h3>
+                <p class="product-desc">Verschiedene Geschmacksrichtungen, 20mg Nikotin, voller Geschmack ab 8,50 €. Weitere Sorten kommen laufend dazu.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+            <div class="product-card fade-in">
+                <span class="product-badge">Basisgerät</span>
+                <span class="product-emoji">🔋</span>
+                <h3>ELFA Akku</h3>
+                <p class="product-desc">Das wiederverwendbare ELFA Basisgerät in Schwarz für 8,99 €. Einfach Pod einsetzen und losvapen.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+            <div class="product-card fade-in">
+                <span class="product-badge">Praktisch</span>
+                <span class="product-emoji">🔌</span>
+                <h3>USB-C Ladekabel</h3>
+                <p class="product-desc">USB-C Ladekabel für Vape, Handy oder andere Geräte – direkt aus dem Automaten ziehen.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+        </div>
+        <div class="products-grid" style="margin-top:24px;">
+            <div class="product-card fade-in">
+                <span class="product-badge">24/7</span>
+                <span class="product-emoji">🔥</span>
+                <h3>Feuerzeuge</h3>
+                <p class="product-desc">Immer ein Feuerzeug dabei – rund um die Uhr verfügbar.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+            <div class="product-card fade-in">
+                <span class="product-badge">Diskret</span>
+                <span class="product-emoji">💜</span>
+                <h3>Kondome</h3>
+                <p class="product-desc">Diskret und jederzeit verfügbar – ohne Gang zur Drogerie.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+            <div class="product-card fade-in">
+                <span class="product-badge">Snacks</span>
+                <span class="product-emoji">🍬</span>
+                <h3>Kaugummi, Bonbons & Snacks</h3>
+                <p class="product-desc">Kleine Snacks für zwischendurch – direkt mitnehmen, Tag und Nacht.</p>
+                <div class="product-price">Verfügbar</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Warum Always?
+            </span>
+            <h2>Deine Vorteile</h2>
+            <p>Kein Anstehen, kein Bargeld, kein Stress. Einfach Always.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>24/7 verfügbar in Zeven</h4>
+                    <p>Tag und Nacht, 365 Tage im Jahr. Dein Automat in der Bahnhofstraße ist immer für dich da.</p>
+                </div>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>Nur Kartenzahlung</h4>
+                    <p>Visa, V PAY, Mastercard, Maestro, Girocard – kein Bargeld nötig. Schnell und kontaktlos.</p>
+                </div>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>Altersverifikation</h4>
+                    <p>Integrierte Altersüberprüfung für verantwortungsvollen Verkauf. Nur ab 18.</p>
+                </div>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>Originale Markenware</h4>
+                    <p>Nur geprüfte Originalprodukte. Immer frisch befüllt, regelmäßig kontrolliert.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Unser Standort
+            </span>
+            <h2>Hier findest du uns</h2>
+            <p>Unser erster Automat steht auf dem Parkplatz/Hof von Saray Imbiss in Zeven – Auffahrt links vom Laden, 24/7 zugänglich.</p>
+        </div>
+        <div class="map-wrapper">
+            <iframe src="https://maps.google.com/maps?q=Saray+Imbiss+Zeven+Bahnhofstra%C3%9Fe+29+27404+Zeven&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Always Automaten Standort bei Saray Imbiss Zeven"></iframe>
+        </div>
+        <div class="map-info-grid">
+            <div class="map-info-card fade-in">
+                <div class="map-info-icon teal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="map-info-text">
+                    <strong>Saray Imbiss</strong>
+                    <span>Parkplatz, Auffahrt links vom Laden</span>
+                </div>
+            </div>
+            <div class="map-info-card fade-in">
+                <div class="map-info-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                </div>
+                <div class="map-info-text">
+                    <strong>Kartenzahlung</strong>
+                    <span>Visa, Mastercard, Girocard & mehr</span>
+                </div>
+            </div>
+            <div class="map-info-card fade-in">
+                <div class="map-info-icon teal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="map-info-text">
+                    <strong>24/7 geöffnet</strong>
+                    <span>Jeden Tag, jede Nacht</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Kundenstimmen
+            </span>
+            <h2>Das sagen unsere Kunden</h2>
+            <p>Echte Erfahrungen von Vapern aus Zeven, Sittensen und dem Landkreis Rotenburg (Wümme).</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"Super praktisch! Nachts um 2 noch schnell Pods geholt, direkt am Parkplatz von Saray Imbiss. Einfach Karte rein, fertig."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">T</div>
+                    <div class="testimonial-info">
+                        <strong>Tim K.</strong>
+                        <span>Zeven</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"Kartenzahlung ist super easy und die Preise sind fair. Gut erreichbar bei Saray Imbiss, ich komme regelmäßig vorbei."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">L</div>
+                    <div class="testimonial-info">
+                        <strong>Lisa M.</strong>
+                        <span>Zeven</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"Nachts um 1 noch ein Ladekabel gebraucht – direkt am Automaten gezogen. Mega praktisch, dass es nicht nur Vapes gibt!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-info">
+                        <strong>Mara S.</strong>
+                        <span>Zeven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Bleib auf dem <span class="gradient-text">Laufenden</span></h2>
+            <p>Neue Sorten, neue Standorte, exklusive Angebote – direkt in dein Postfach.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="hidden" name="fi-text-formular" value="Newsletter">
+                <input type="email" name="fi-sender-email" placeholder="Deine E-Mail-Adresse" required>
+                <button type="submit" class="btn btn-primary">Anmelden</button>
+                <p id="newsletter-result" class="form-result"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section: Großhandel -->
+<section class="features" style="padding:60px 0;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                Für Geschäftskunden
+            </span>
+            <h2>Produkte für Ihr Geschäft</h2>
+            <p>Sie betreiben einen Kiosk, Shop oder ein anderes Geschäft? Wir liefern Vapes, Snacks, Kondome, Feuerzeuge und mehr zu attraktiven Großhandelspreisen.</p>
+        </div>
+        <div class="features-grid" style="max-width:800px;margin:0 auto;">
+            <div class="feature-card fade-in">
+                <div class="feature-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>Großhandelspreise</h4>
+                    <p>Attraktive Konditionen für Wiederverkäufer – individuell nach Bedarf.</p>
+                </div>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="feature-text">
+                    <h4>Persönliche Beratung</h4>
+                    <p>Wir stellen das passende Sortiment für Ihre Kunden zusammen.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+            <a href="vapes-anfragen.html" class="btn btn-primary btn-lg">Unverbindlich Preise anfragen</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section: Standort -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Du hast einen Laden? Wir haben den Automaten.</h2>
+            <p>Verdiene passives Einkommen mit einem Always Automaten vor deinem Geschäft. Kein Aufwand, kein Risiko – wir kümmern uns um alles.</p>
+            <div class="cta-buttons">
+                <a href="standort-anfrage.html" class="btn btn-white btn-lg">Standort anfragen</a>
+                <a href="kontakt.html" class="btn btn-outline btn-lg">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.png" alt="Always Automaten">
+                    <span>Always Automaten</span>
+                </a>
+                <p>Dein 24/7 Automat in Zeven – Vapes, Snacks, Ladekabel und mehr. Nur Kartenzahlung. Immer da. Immer für dich.</p>
+                <div class="footer-payment">
+                    <span class="payment-badge">Visa</span>
+                    <span class="payment-badge">V PAY</span>
+                    <span class="payment-badge">Mastercard</span>
+                    <span class="payment-badge">Maestro</span>
+                    <span class="payment-badge">Girocard</span>
+                </div>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="standorte.html">Standorte</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="aktuelles.html">Aktuelles</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul class="footer-links">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Feldstraße 22<br>27404 Zeven</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:+4915753708864">0157 5370 8864</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <a href="mailto:info@always-automaten.de">info@always-automaten.de</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Always Automaten. Alle Rechte vorbehalten. Nur für Personen ab 18 Jahren.</p>
+            <div class="footer-legal">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+        <div class="cookie-text">
+            <strong>Cookie-Einstellungen</strong>
+            <p>Wir verwenden Cookies, um dir das beste Erlebnis zu bieten. Du kannst selbst entscheiden, welche Cookies du zulassen möchtest. <a href="datenschutz.html">Datenschutzerklärung</a></p>
+        </div>
+        <div class="cookie-categories" id="cookie-categories">
+            <label class="cookie-category">
+                <div class="cookie-cat-info">
+                    <strong>Notwendig</strong>
+                    <span>Für die Grundfunktion der Website erforderlich</span>
+                </div>
+                <input type="checkbox" checked disabled>
+                <span class="cookie-toggle always-on"></span>
+            </label>
+            <label class="cookie-category">
+                <div class="cookie-cat-info">
+                    <strong>Analyse & Statistik</strong>
+                    <span>Hilft uns, die Website zu verbessern (z.B. Google Analytics)</span>
+                </div>
+                <input type="checkbox" id="cookie-analytics">
+                <span class="cookie-toggle"></span>
+            </label>
+            <label class="cookie-category">
+                <div class="cookie-cat-info">
+                    <strong>Marketing</strong>
+                    <span>Für personalisierte Inhalte und Werbung</span>
+                </div>
+                <input type="checkbox" id="cookie-marketing">
+                <span class="cookie-toggle"></span>
+            </label>
+        </div>
+        <div class="cookie-buttons">
+            <button class="btn btn-primary btn-sm" id="cookie-accept-all">Alle akzeptieren</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-save">Auswahl speichern</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-decline">Nur notwendige</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+<script>
+const forminit = new Forminit();
+
+document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const { data, error } = await forminit.submit('NEWSLETTER_FORM_ID', formData);
+    if (error) {
+        document.getElementById('newsletter-result').textContent = 'Fehler: ' + error.message;
+        document.getElementById('newsletter-result').style.color = '#ef4444';
+        return;
+    }
+    window.location.href = 'danke.html';
+});
+</script>
+</body>
+</html>

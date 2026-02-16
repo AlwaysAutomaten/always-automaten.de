@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dein Feedback für Always Automaten. Bewerte uns, wünsche dir neue Sorten und hilf uns, besser zu werden.">
+    <meta name="theme-color" content="#0c1929">
+    <meta property="og:title" content="Feedback & Sortenwünsche | Always Automaten Zeven">
+    <meta property="og:description" content="Bewerte Always Automaten und wünsche dir neue Produkte für den Automaten in Zeven.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://always-automaten.de/feedback.html">
+    <meta property="og:image" content="https://always-automaten.de/images/logo.png">
+    <title>Feedback & Sortenwünsche | Always Automaten Zeven</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="canonical" href="https://always-automaten.de/feedback.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <img src="images/logo.png" alt="Always Automaten">
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+</div>
+
+<div class="age-modal" id="age-modal">
+    <div class="age-modal-content">
+        <img src="images/logo.png" alt="Always Automaten Logo">
+        <div class="age-badge">18+</div>
+        <h2>Altersverifikation</h2>
+        <p>Diese Website enthält Informationen zu Tabak- und Nikotinprodukten. Der Zugang ist nur für Personen ab 18 Jahren gestattet.</p>
+        <div class="age-buttons">
+            <button class="btn btn-primary btn-lg" id="age-confirm">Ich bin 18+</button>
+            <button class="btn btn-secondary btn-lg" id="age-deny">Unter 18</button>
+        </div>
+        <div class="age-deny-msg" id="age-deny-msg">Du musst mindestens 18 Jahre alt sein, um diese Website zu besuchen.</div>
+    </div>
+</div>
+
+<nav class="nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="Always Automaten">
+            <span>Always Automaten</span>
+        </a>
+        <button class="nav-toggle" aria-label="Menü öffnen">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="nav-menu">
+    <div class="nav-menu-content">
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="index.html#produkte">Produkte</a></li>
+            <li><a href="standorte.html">Standorte</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="standort-anfrage.html">Standort anfragen</a></li>
+            <li><a href="aktuelles.html">Aktuelles</a></li>
+            <li><a href="vapes-anfragen.html">Großhandel</a></li>
+        </ul>
+        <div class="nav-cta-menu">
+            <a href="standorte.html" class="btn btn-primary btn-lg">Standort finden</a>
+        </div>
+    </div>
+</div>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Feedback & <span class="gradient-text">Sortenwünsche</span></h1>
+        <p class="lead">Sag uns, was du denkst! Bewerte uns und wünsche dir neue Sorten für den Automaten.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Deine Meinung zählt</h2>
+                <p>Wir wollen den besten Automaten in Zeven und im Landkreis Rotenburg betreiben – nicht nur für Vapes, sondern auch für andere Produkte. Sag uns, was du dir wünschst!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Produktwünsche</h4>
+                            <p>Welche Produkte und Marken möchtest du im Automaten sehen?</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Bewertung</h4>
+                            <p>Wie zufrieden bist du mit unserem Service? Gib uns Sterne!</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Verbesserungen</h4>
+                            <p>Was können wir besser machen? Jedes Feedback hilft uns weiter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Dein Feedback</h3>
+                <p>Teile uns deine Erfahrung und Wünsche mit.</p>
+                <form id="feedback-form">
+                    <input type="hidden" name="fi-text-formular" value="Feedback & Sortenwünsche">
+                    <input type="hidden" name="fi-text-bewertung" id="rating-value" value="">
+                    <div class="form-group">
+                        <label class="form-label">Deine Bewertung</label>
+                        <div class="star-rating">
+                            <div class="star" onclick="setRating(1)">
+                                <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div class="star" onclick="setRating(2)">
+                                <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div class="star" onclick="setRating(3)">
+                                <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div class="star" onclick="setRating(4)">
+                                <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div class="star" onclick="setRating(5)">
+                                <svg viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Dein Name (optional)</label>
+                        <input type="text" name="fi-sender-fullName" class="form-input" placeholder="Max">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-Mail (optional)</label>
+                        <input type="email" name="fi-sender-email" class="form-input" placeholder="Für Rückmeldung zu deinem Wunsch">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Welche Produktkategorien interessieren dich?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-vapes" value="Vapes & Pods">
+                                <span class="checkbox-box"></span>
+                                <span>Vapes & Pods</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-ladekabel" value="Ladekabel">
+                                <span class="checkbox-box"></span>
+                                <span>Ladekabel</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-kondome" value="Kondome">
+                                <span class="checkbox-box"></span>
+                                <span>Kondome</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-feuerzeuge" value="Feuerzeuge & Zubehör">
+                                <span class="checkbox-box"></span>
+                                <span>Feuerzeuge & Zubehör</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-snacks" value="Snacks">
+                                <span class="checkbox-box"></span>
+                                <span>Snacks</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="fi-text-kategorie-sonstiges" value="Sonstiges" id="check-sonstiges">
+                                <span class="checkbox-box"></span>
+                                <span>Sonstiges</span>
+                            </label>
+                        </div>
+                        <input type="text" name="fi-text-sonstiges-detail" class="form-input sonstiges-input" id="sonstiges-input" placeholder="Was genau wünschst du dir?" style="display:none;margin-top:12px;">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Welche Sorten wünschst du dir?</label>
+                        <textarea name="fi-text-sortenwuensche" class="form-textarea" rows="3" placeholder="z.B. ELFA Watermelon, neue Geschmacksrichtungen..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Allgemeines Feedback</label>
+                        <textarea name="fi-text-feedback" class="form-textarea" rows="3" placeholder="Was gefällt dir? Was können wir verbessern?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-checkbox">
+                            <input type="checkbox" required>
+                            <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme zu.</span>
+                        </label>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-lg">Feedback senden</button>
+                    </div>
+                    <p id="feedback-result" class="form-result"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.png" alt="Always Automaten">
+                    <span>Always Automaten</span>
+                </a>
+                <p>Dein 24/7 Automat in Zeven – Vapes, Snacks, Ladekabel und mehr. Nur Kartenzahlung. Immer da. Immer für dich.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="standorte.html">Standorte</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="aktuelles.html">Aktuelles</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul class="footer-links">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:+4915753708864">0157 5370 8864</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <a href="mailto:info@always-automaten.de">info@always-automaten.de</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Always Automaten. Alle Rechte vorbehalten.</p>
+            <div class="footer-legal">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+        <div class="cookie-text">
+            <strong>Cookie-Einstellungen</strong>
+            <p>Wir verwenden Cookies, um dir das beste Erlebnis zu bieten. <a href="datenschutz.html">Datenschutzerklärung</a></p>
+        </div>
+        <div class="cookie-categories" id="cookie-categories">
+            <label class="cookie-category">
+                <div class="cookie-cat-info"><strong>Notwendig</strong><span>Grundfunktion der Website</span></div>
+                <input type="checkbox" checked disabled><span class="cookie-toggle always-on"></span>
+            </label>
+            <label class="cookie-category">
+                <div class="cookie-cat-info"><strong>Analyse & Statistik</strong><span>z.B. Google Analytics</span></div>
+                <input type="checkbox" id="cookie-analytics"><span class="cookie-toggle"></span>
+            </label>
+            <label class="cookie-category">
+                <div class="cookie-cat-info"><strong>Marketing</strong><span>Personalisierte Inhalte</span></div>
+                <input type="checkbox" id="cookie-marketing"><span class="cookie-toggle"></span>
+            </label>
+        </div>
+        <div class="cookie-buttons">
+            <button class="btn btn-primary btn-sm" id="cookie-accept-all">Alle akzeptieren</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-save">Auswahl speichern</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-decline">Nur notwendige</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+<script>
+const forminit = new Forminit();
+
+document.getElementById('check-sonstiges').addEventListener('change', function() {
+    document.getElementById('sonstiges-input').style.display = this.checked ? 'block' : 'none';
+    if (!this.checked) document.getElementById('sonstiges-input').value = '';
+});
+
+document.getElementById('feedback-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const { data, error } = await forminit.submit('FEEDBACK_FORM_ID', formData);
+    if (error) {
+        document.getElementById('feedback-result').textContent = 'Fehler: ' + error.message;
+        document.getElementById('feedback-result').style.color = '#ef4444';
+        return;
+    }
+    window.location.href = 'danke.html';
+});
+</script>
+</body>
+</html>
