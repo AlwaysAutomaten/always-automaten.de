@@ -377,15 +377,15 @@ section { padding: 60px 0; }
     border-radius: var(--radius-lg);
     padding: 14px 16px;
     box-shadow: var(--shadow-lg);
-    display: flex;
+    display: none;
     align-items: center;
     gap: 12px;
     max-width: 200px;
     backdrop-filter: blur(10px);
 }
 
-.hero-card.top { top: -15px; right: -10px; z-index: 2; display: none; }
-.hero-card.bottom { bottom: -15px; left: -10px; z-index: 2; display: none; }
+.hero-card.top { top: -15px; right: -10px; z-index: 2; }
+.hero-card.bottom { bottom: -15px; left: -10px; z-index: 2; }
 
 .hero-card-icon {
     width: 40px; height: 40px;
