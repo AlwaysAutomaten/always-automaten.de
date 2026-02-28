@@ -1,7 +1,7 @@
 # Always Automaten - Projektstatus
 
-**Letzte Aktualisierung:** 18. Februar 2026
-**Letztes Thema:** Produktsortiment auf Vapes/Pods/Einweg-Vapes reduziert
+**Letzte Aktualisierung:** 28. Februar 2026
+**Letztes Thema:** Zahlungsmethoden korrigiert, Produktsorten + Preise, Großhandel-Seite überarbeitet, Ansprache auf Du
 
 ---
 
@@ -16,6 +16,12 @@
 - [x] Alle Formulare mit Web3Forms (Key: 8fa3512b...)
 - [x] Honeypot-Spamschutz auf allen Formularen
 - [x] Pflichtfelder auf allen Formularen
+- [x] Zahlungsmethoden auf Girocard korrigiert (Kreditkarten folgen bald)
+- [x] Hero: Echtes Automaten-Foto statt Logo (images/automat-foto.jpg)
+- [x] Hero-Cards (floating badges) nur auf Desktop sichtbar, auf Mobile ausgeblendet
+- [x] Produkte mit konkreten Sorten (Flavor-Tags) und Preisen (ELFA Pods 8,50€, ELFA Akku 8,99€, Lost Mary BM600 8,00€)
+- [x] Großhandel-Seite komplett überarbeitet: 8 Produktkategorien, Marken-Banner, Preise auf Anfrage
+- [x] Durchgehend Duzen auf allen Seiten (standort-anfrage, vapes-anfragen, index, faq)
 
 ### Hosting & Domain (100%)
 - [x] GitHub Pages live (AlwaysAutomaten/always-automaten.de)
@@ -50,7 +56,6 @@
 - [ ] **USt-IdNr im Impressum** - Wartet auf Finanzamt, dann einfügen
 - [ ] **Social Media Accounts erstellen** - Instagram @always.automaten + Facebook Page
 - [ ] **Posts veröffentlichen** - Woche 1 Content ist fertig, muss gepostet werden
-- [x] **Sortiment angepasst** - Nur noch Vapes, Pods, Basisgeräte und Einweg-Vapes (andere Produkte passen nicht in Schächte)
 
 ### Mittelfristig
 - [ ] **Newsletter-Tool** - Aktuell geht Newsletter nur als Mail, kein echtes Tool
@@ -59,9 +64,9 @@
 - [ ] **Social Media Woche 2+** - Weiterer Content
 
 ### Irgendwann / Nice-to-have
-- [ ] **ELFA Sorten auf Website** - Konkrete Geschmacksrichtungen auflisten wenn bekannt
 - [ ] **Weitere Standorte** - Standorte-Seite erweitern wenn neue dazukommen
 - [ ] **Blog-Beiträge** - Aktuelles-Seite mit echten Beiträgen füllen
+- [ ] **Kreditkarten nachrüsten** - Wenn Visa/Mastercard am Automaten geht, überall auf der Website aktualisieren
 
 ---
 
@@ -89,3 +94,4 @@
 | `css/style.css` | Gesamtes Design |
 | `js/main.js` | Alle Funktionen (GA4, Cookies, Menü, etc.) |
 | `social-media/woche-1/` | Fertige Social Media Posts + Captions |
+| `images/automat-foto.jpg` | Echtes Foto vom Automaten (Hero-Bereich) |
