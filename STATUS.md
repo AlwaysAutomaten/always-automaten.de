@@ -1,7 +1,7 @@
 # Always Automaten - Projektstatus
 
-**Letzte Aktualisierung:** 28. Februar 2026
-**Letztes Thema:** Zahlungsmethoden korrigiert, Produktsorten + Preise, Großhandel-Seite überarbeitet, Ansprache auf Du
+**Letzte Aktualisierung:** 02. März 2026
+**Letztes Thema:** USt-IdNr eingetragen, Social Media Links eingebaut, Preise korrigiert
 
 ---
 
@@ -22,6 +22,9 @@
 - [x] Produkte mit konkreten Sorten (Flavor-Tags) und Preisen (ELFA Pods 8,50€, ELFA Akku 8,50€, Lost Mary BM600 8,00€)
 - [x] Großhandel-Seite komplett überarbeitet: 8 Produktkategorien, Marken-Banner, Preise auf Anfrage
 - [x] Durchgehend Duzen auf allen Seiten (standort-anfrage, vapes-anfragen, index, faq)
+- [x] **USt-IdNr 52/101/10350 im Impressum eingetragen**
+- [x] **Social Media Links (Instagram + Facebook) im Footer aller 11 Seiten**
+- [x] **Social Media Links im Burger-Menü aller 11 Seiten**
 
 ### Hosting & Domain (100%)
 - [x] GitHub Pages live (AlwaysAutomaten/always-automaten.de)
@@ -37,12 +40,15 @@
 - [x] robots.txt und sitemap.xml vorhanden
 - [ ] SEO-Optimierung nach ersten Search Console Daten (in ein paar Wochen)
 
-### Social Media Content (Woche 1 fertig)
+### Social Media (Accounts + Woche 1 Content)
+- [x] **Instagram: @alwaysautomaten**
+- [x] **Facebook: https://www.facebook.com/share/1D2yhZbTk2/?mibextid=wwXIfr**
 - [x] 7 Instagram Feed Posts (PNG, 1080x1350)
 - [x] 5 Instagram Stories (PNG, 1080x1920)
 - [x] Instagram Captions mit Hashtags
 - [x] Facebook Posts Texte
 - [x] Alle Grafiken zeigen konkrete Produkte + Preise
+- [ ] **Posts veröffentlichen** - Woche 1 Content ist fertig, muss gepostet werden
 
 ### Dokumentation (100%)
 - [x] ANLEITUNG.md - Komplette technische Doku
@@ -53,8 +59,6 @@
 ## Was noch OFFEN ist
 
 ### Dringend (bald machen)
-- [ ] **USt-IdNr im Impressum** - Wartet auf Finanzamt, dann einfügen
-- [ ] **Social Media Accounts erstellen** - Instagram @always.automaten + Facebook Page
 - [ ] **Posts veröffentlichen** - Woche 1 Content ist fertig, muss gepostet werden
 
 ### Mittelfristig
@@ -81,6 +85,8 @@
 | Search Console | Dein Google-Konto |
 | Google Business | Dein Google-Konto |
 | E-Mail | info@always-automaten.de (Google Workspace) |
+| Instagram | @alwaysautomaten |
+| Facebook | facebook.com/share/1D2yhZbTk2 |
 
 ---
 
