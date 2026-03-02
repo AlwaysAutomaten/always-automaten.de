@@ -98,7 +98,7 @@ www.always-automaten.de
 ELFA Pods. Jede Geschmacksrichtung. Jede Uhrzeit.
 
 Ab 8,50€ immer verfügbar.
-ELFA Akku? 8,99€. Auch am Sonntag. Auch um 4 Uhr morgens.
+ELFA Akku? 8,50€. Auch am Sonntag. Auch um 4 Uhr morgens.
 
 Das ist der Move: Du kommst, du zahlst, du gehst.
 Keine Warteschlange. Keine Ladenzeiten. Keine Ausreden.
@@ -131,7 +131,7 @@ Warum zu uns kommen?
 ✓ Sichere Altersverifikation (18+)
 
 ELFA Pods ab 8,50€
-ELFA Akku 8,99€
+ELFA Akku 8,50€
 
 Plus: USB-C Ladekabel, Kondome, Feuerzeuge, Snacks
 

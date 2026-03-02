@@ -32,7 +32,7 @@ Unser Automat bei Saray Imbiss ist voll mit ELFA Pods in verschiedenen Geschmack
 - Ab 8,50€
 
 PLUS:
-- ELFA Akku (Schwarz) – 8,99€
+- ELFA Akku (Schwarz) – 8,50€
 - USB-C Ladekabel
 - Feuerzeuge
 - Snacks & Kaugummi
@@ -83,7 +83,7 @@ Was findest du in unserem 24/7-Automaten?
 
 VAPES & ZUBEHÖR:
 - ELFA Pods (20mg) – ab 8,50€
-- ELFA Akku Schwarz – 8,99€
+- ELFA Akku Schwarz – 8,50€
 - USB-C Ladekabel
 
 EVERYDAY ESSENTIALS:
@@ -134,7 +134,7 @@ Einfach smart shoppen – 24/7.
 Saray Imbiss, Bahnhofstraße 29, Zeven
 Parkplatz/Hof – Auffahrt links
 
-ELFA Pods ab 8,50€ | ELFA Akku 8,99€
+ELFA Pods ab 8,50€ | ELFA Akku 8,50€
 
 **Hashtags:**
 #Kartenzahlung #Kontaktlos #ApplePay #GooglePay #AlwaysAutomaten #VapeZeven #Zeven #Automat #BargeldlosZahlen #247 #ELFA #VapeAutomat #Convenient #RotenburgWümme #Bremervörde
@@ -160,7 +160,7 @@ Parken: Kostenlos direkt vor Ort
 
 Was gibt's?
 - ELFA Pods ab 8,50€
-- ELFA Akku 8,99€
+- ELFA Akku 8,50€
 - USB-C Kabel
 - Feuerzeuge
 - Kondome
@@ -196,7 +196,7 @@ Teile deine Erfahrung in den Kommentaren oder sende uns dein Feedback:
 Standort: Saray Imbiss, Bahnhofstraße 29, 27404 Zeven
 Parkplatz/Hof – Auffahrt links
 
-ELFA Pods ab 8,50€ | ELFA Akku 8,99€
+ELFA Pods ab 8,50€ | ELFA Akku 8,50€
 24/7 | Nur Kartenzahlung
 
 always-automaten.de

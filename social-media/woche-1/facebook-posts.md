@@ -26,7 +26,7 @@ ELFA-Fans aufgepasst! 🔥
 
 Ihr sucht hochwertige Vape-Produkte zu fairen Preisen? Dann seid ihr bei uns genau richtig. In unserem Automaten findet ihr eine große Auswahl an ELFA Pods in verschiedenen Geschmacksrichtungen – alle mit 20mg Nikotin und ab nur 8,50€.
 
-Noch kein ELFA-Gerät? Kein Problem! Den ELFA Akku in Schwarz bekommt ihr bei uns für 8,99€. Dazu natürlich auch USB-C Ladekabel, damit ihr immer startklar seid.
+Noch kein ELFA-Gerät? Kein Problem! Den ELFA Akku in Schwarz bekommt ihr bei uns für 8,50€. Dazu natürlich auch USB-C Ladekabel, damit ihr immer startklar seid.
 
 Das Beste: Ihr müsst nicht auf Öffnungszeiten achten. Ob morgens um 7 oder nachts um 3 – unser Automat ist immer bereit. Einfach vorbeikommen, Karte rein, Produkt raus. So einfach kann Shopping sein!
 
@@ -66,7 +66,7 @@ Unser komplettes Sortiment auf einen Blick! 🛍️
 
 Viele von euch haben gefragt: Was gibt's denn alles im Always-Automaten? Hier kommt die Antwort:
 
-🔹 **ELFA Vapes** – Pods ab 8,50€, Akku 8,99€, verschiedene Geschmacksrichtungen
+🔹 **ELFA Vapes** – Pods ab 8,50€, Akku 8,50€, verschiedene Geschmacksrichtungen
 🔹 **USB-C Ladekabel** – damit euer Akku nie leer bleibt
 🔹 **Feuerzeuge** – für alle Lebenslagen
 🔹 **Kondome** – Sicherheit geht vor, auch um 3 Uhr nachts

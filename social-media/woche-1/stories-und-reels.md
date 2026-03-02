@@ -91,7 +91,7 @@
 
 **Texteinblendungen:**
 - "ELFA Pods ab 8,50€"
-- "ELFA Akku 8,99€"
+- "ELFA Akku 8,50€"
 - "Snacks, Kabel, Kondome"
 - "Alles 24/7 verfügbar"
 

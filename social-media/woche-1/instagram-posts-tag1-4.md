@@ -54,7 +54,7 @@ Hier ist das Line-Up:
 ELFA Pods - ab 8,50€
 Alle gängigen Flavors, immer frisch bestückt
 
-ELFA Akku - 8,99€
+ELFA Akku - 8,50€
 Schluss mit Einweg-Waste, level up dein Setup
 
 Das Beste? Du musst nicht warten bis irgendein Laden aufmacht.
