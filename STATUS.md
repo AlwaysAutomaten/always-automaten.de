@@ -19,7 +19,7 @@
 - [x] Zahlungsmethoden auf Girocard korrigiert (Kreditkarten folgen bald)
 - [x] Hero: Echtes Automaten-Foto statt Logo (images/automat-foto.jpg)
 - [x] Hero-Cards (floating badges) nur auf Desktop sichtbar, auf Mobile ausgeblendet
-- [x] Produkte mit konkreten Sorten (Flavor-Tags) und Preisen (ELFA Pods 8,50€, ELFA Akku 8,99€, Lost Mary BM600 8,00€)
+- [x] Produkte mit konkreten Sorten (Flavor-Tags) und Preisen (ELFA Pods 8,50€, ELFA Akku 8,50€, Lost Mary BM600 8,00€)
 - [x] Großhandel-Seite komplett überarbeitet: 8 Produktkategorien, Marken-Banner, Preise auf Anfrage
 - [x] Durchgehend Duzen auf allen Seiten (standort-anfrage, vapes-anfragen, index, faq)
 
