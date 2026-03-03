@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0c1929;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+}
+
+/* Background glows */
+.bg-glow {
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+}
+.glow-1 { top: -80px; right: -100px; background: #e8732c; }
+.glow-2 { bottom: 80px; left: -120px; background: #00b4d8; }
+.glow-3 { bottom: -50px; right: 200px; background: #e8732c; opacity: 0.06; width: 400px; height: 400px; }
+
+/* Content wrapper */
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 48px 50px 60px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.header-left span {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.3px;
+}
+.badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(0,180,216,0.15);
+    color: #00b4d8;
+    border: 1px solid rgba(0,180,216,0.3);
+}
+
+/* Title */
+h1 {
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+.gradient-text {
+    background: linear-gradient(135deg, #00b4d8, #e8732c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.sub {
+    font-size: 21px;
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 32px;
+}
+.product {
+    background: #111d2e;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 32px 34px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.product.highlight {
+    border: 1px solid rgba(0,180,216,0.25);
+    background: linear-gradient(135deg, rgba(0,180,216,0.06), #111d2e);
+}
+.prod-emoji {
+    font-size: 48px;
+    flex-shrink: 0;
+    width: 70px;
+    text-align: center;
+}
+.prod-info {
+    flex: 1;
+}
+.prod-name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+}
+.prod-desc {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+    font-weight: 500;
+}
+.prod-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #e8732c;
+    background: rgba(232,115,44,0.1);
+    border-radius: 12px;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    letter-spacing: 0.3px;
+}
+
+/* Divider */
+.divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #00b4d8, #e8732c);
+    border-radius: 2px;
+    margin: 0 auto 24px;
+}
+
+/* Feedback Section */
+.feedback {
+    background: linear-gradient(135deg, rgba(232,115,44,0.08), rgba(0,180,216,0.08));
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 36px 40px;
+    text-align: center;
+}
+.feedback-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    letter-spacing: 0.2px;
+}
+.feedback-text {
+    font-size: 21px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    font-weight: 500;
+}
+.feedback-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #00b4d8;
+    background: rgba(0,180,216,0.12);
+    border: 1px solid rgba(0,180,216,0.3);
+    border-radius: 12px;
+    padding: 12px 28px;
+    letter-spacing: 0.3px;
+}
+
+/* Footer */
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 16px;
+    font-size: 17px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 500;
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+</style></head>
+<body>
+
+<div class="bg-glow glow-1"></div>
+<div class="bg-glow glow-2"></div>
+<div class="bg-glow glow-3"></div>
+
+<div class="content">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <img class="logo" src="../../../images/logo.png" alt="Logo">
+            <span>Always Automaten</span>
+        </div>
+        <span class="badge">PRODUKTE</span>
+    </div>
+
+    <!-- Title -->
+    <h1>Unsere <span class="gradient-text">Produkte</span></h1>
+    <p class="sub">24/7 am Automaten &middot; Bahnhofstra&szlig;e Zeven</p>
+
+    <!-- Products -->
+    <div class="products">
+        <div class="product highlight">
+            <div class="prod-emoji">💨</div>
+            <div class="prod-info">
+                <div class="prod-name">ELFA Pods</div>
+                <div class="prod-desc">Verschiedene Geschmacksrichtungen, 20mg Nikotin</div>
+            </div>
+            <div class="prod-price">ab 8,50 &euro;</div>
+        </div>
+
+        <div class="product highlight">
+            <div class="prod-emoji">🔋</div>
+            <div class="prod-info">
+                <div class="prod-name">ELFA Akku</div>
+                <div class="prod-desc">Basisger&auml;t in Schwarz, wiederverwendbar</div>
+            </div>
+            <div class="prod-price">8,99 &euro;</div>
+        </div>
+
+        <div class="product">
+            <div class="prod-emoji">🔥</div>
+            <div class="prod-info">
+                <div class="prod-name">Lost Mary BM600</div>
+                <div class="prod-desc">Einweg-Vape, verschiedene Sorten verf&uuml;gbar</div>
+            </div>
+            <div class="prod-price">8,00 &euro;</div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Feedback Section -->
+    <div class="feedback">
+        <div class="feedback-title">Was w&uuml;nscht ihr euch? 💬</div>
+        <div class="feedback-text">
+            Gebt uns gerne einfach Bescheid, was ihr wollt &ndash;<br>
+            entweder als DM oder &uuml;ber unsere Website:
+        </div>
+        <div class="feedback-link">always-automaten.de/feedback</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-info">
+        <span>📍 Bei Saray Imbiss, Zeven</span>
+        <span>&middot;</span>
+        <span>💳 Nur Kartenzahlung</span>
+    </div>
+
+</div>
+
+<div class="watermark">@always.automaten</div>
+
+</body></html>
